@@ -1,4 +1,5 @@
 ---
+import Navigation from '../components/Navigation.astro';
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import '../styles/global.css';
@@ -29,6 +30,7 @@ const textCase = "uppercase";
     <a href="/">Home</a>
     <a href="/about/">About</a>
     <a href="/blog/">Blog</a>
+		<Navigation />
 
     <h1>{pageTitle}</h1>
 		<p>Here are a few facts about me:</p>
