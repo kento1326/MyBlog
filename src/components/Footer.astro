@@ -1,14 +1,23 @@
 ---
 import Social from "./Social.astro";
 ---
-<style>
-  footer{
-    display:flex;
-    gap:1rem;
-    margin-top:2rem;
-  }
-</style>
 
 <footer>
   <Social platform="github" username="kento1326" />
 </footer>
+
+<style>
+  footer {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+  }
+
+  @media (min-width: 768px) {
+    footer {
+      flex-direction: row;
+      gap: 2rem;
+    }
+  }
+</style>
